@@ -322,3 +322,9 @@ body:has(.editorial-scene) { overflow: hidden; overscroll-behavior: none; }
 }
 @media (max-height: 500px) { .birthday-experience .scene-back { top: max(10px, env(safe-area-inset-top)); } }
 @media (prefers-reduced-motion: reduce) { .scene-back, .scene-back svg { transition: none !important; } }
+
+/* Keep the first paint ivory while saved content and the birthday date load. */
+html, body { background: #f8f4eb; }
+.birthday-experience { background: #f8f4eb; }
+.experience-loading { height: 100dvh; display: grid; place-items: center; padding: 2rem; background: #f8f4eb; color: #697268; }
+.experience-loading p { font: italic 1.5rem var(--font-display); text-align: center; }

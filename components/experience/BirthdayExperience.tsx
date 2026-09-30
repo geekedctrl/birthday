@@ -30,7 +30,7 @@ export default function BirthdayExperience() {
   const [unlocked, setUnlocked] = useState(process.env.NEXT_PUBLIC_BYPASS_BIRTHDAY_GATE === "true");
   const [muted, setMuted] = useState(false);
   const [devOpen, setDevOpen] = useState(false);
-  const [, setContentVersion] = useState(0);
+  const [ready, setReady] = useState(false);
   const music = useRef<HTMLAudioElement>(null);
   const [leaving, setLeaving] = useState(false);
   const navigating = useRef(false);
@@ -38,13 +38,33 @@ export default function BirthdayExperience() {
   useEffect(() => () => transitionTimers.current.forEach(window.clearTimeout), []);
 
   useEffect(() => {
-    const saved = window.localStorage.getItem("birthday-scene");
-    if (saved && scenes.includes(saved as Scene)) setScene(saved as Scene);
-    setUnlocked(process.env.NEXT_PUBLIC_BYPASS_BIRTHDAY_GATE === "true" || Date.now() >= unlockTime());
+    const controller = new AbortController();
+    const initialise = async () => {
+      try {
+        const response = await fetch("/api/content", { cache: "no-store", signal: controller.signal });
+        if (!response.ok) throw new Error("Could not load birthday content");
+        const content = await response.json();
+        if (controller.signal.aborted) return;
+        setLiveContent(content);
+      } catch {
+        if (controller.signal.aborted) return;
+        // Retain the default content when the content service is unavailable.
+      }
+      try {
+        const saved = window.localStorage.getItem("birthday-scene");
+        if (saved && scenes.includes(saved as Scene)) setScene(saved as Scene);
+      } catch { /* Storage may be unavailable in private browsing. */ }
+      setUnlocked(process.env.NEXT_PUBLIC_BYPASS_BIRTHDAY_GATE === "true" || Date.now() >= unlockTime());
+      setReady(true);
+    };
+    void initialise();
+    return () => controller.abort();
+  }, []);
+  useEffect(() => {
+    if (!ready) return;
     const timer = window.setInterval(() => setUnlocked(process.env.NEXT_PUBLIC_BYPASS_BIRTHDAY_GATE === "true" || Date.now() >= unlockTime()), 1000);
     return () => window.clearInterval(timer);
-  }, []);
-  useEffect(() => { fetch("/api/content", { cache: "no-store" }).then((response) => response.json()).then((content) => { setLiveContent(content); setContentVersion((version) => version + 1); }).catch(() => undefined); }, []);
+  }, [ready]);
   useEffect(() => {
     if (music.current) music.current.muted = muted;
   }, [muted]);
@@ -79,6 +99,7 @@ export default function BirthdayExperience() {
   };
 
   const previousScene = scenes.indexOf(scene) > 1 ? scenes[scenes.indexOf(scene) - 1] : null;
+  if (!ready) return <main className="experience-loading" aria-busy="true"><p role="status">A little love is on its way…</p></main>;
   if (!unlocked) return <BirthdayGate />;
   return (
     <main className="birthday-experience relative min-h-screen" data-scene={scene} data-can-go-back={Boolean(previousScene)}>
