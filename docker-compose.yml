@@ -2,12 +2,30 @@ services:
   birthday:
     build: .
     restart: unless-stopped
-    env_file: .env
+    environment:
+      NODE_ENV: production
+      HOSTNAME: 0.0.0.0
+      PORT: "3000"
+      ADMIN_TOKEN: ${ADMIN_TOKEN:?Set ADMIN_TOKEN in .env}
+      NTFY_TOPIC_URL: ${NTFY_TOPIC_URL:-https://ntfy.sh/suba}
     volumes:
       - ./data:/app/data
       - ./uploads:/app/uploads
-    networks: [birthday-private]
-    expose: ["3000"]
+    expose:
+      - "3000"
+    networks:
+      - birthday-private
+
+  cloudflared:
+    image: cloudflare/cloudflared:latest
+    restart: unless-stopped
+    command: tunnel --no-autoupdate run
+    environment:
+      TUNNEL_TOKEN: ${CLOUDFLARE_TUNNEL_TOKEN:?Set CLOUDFLARE_TUNNEL_TOKEN in .env}
+    depends_on:
+      - birthday
+    networks:
+      - birthday-private
 
 networks:
   birthday-private:
