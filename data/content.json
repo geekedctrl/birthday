@@ -1,0 +1,175 @@
+{
+  "birthdayConfig": {
+    "girlfriend": {
+      "name": "Subaasini",
+      "nickname": "Kuttyma"
+    },
+    "birthday": {
+      "date": "2026-09-20T09:23:00+08:00",
+      "timezone": "Asia/Kuala_Lumpur"
+    },
+    "opening": {
+      "introLine": "I made something for you.",
+      "promptLine": "One small thing first.",
+      "cinemaTitle": "Happy Birthday, Kuttyma",
+      "cinemaSubtitle": "A little secret place, made just for you."
+    },
+    "finalMessage": "I weave you da kuttyma",
+    "music": {
+      "intro": "public/audio/Tum Hi Ho (Lyrics)_Arijit Singh_Aashiqui 2_@tseries.mp3",
+      "timeline": "public/audio/Vinnai Thaandi Varuvaayaa - Hosanna Song ( Lyrics _ Tamil ) [5jwPklkxOTY].mp3",
+      "constellation": "public/audio/Lana Del Rey - Young and Beautiful [o_1aF54DO60].mp3",
+      "vinyl": "/audio/Selena Gomez - The Heart Wants What It Wants (Official Video) [ij_0p_6qTss].mp3",
+      "finale": "public/audio/Aşk Laftan Anlamaz [t_mF93MFcnE].mp3"
+    },
+    "media": {
+      "finalPhoto": "/photos/final-placeholder.svg",
+      "faceMe": "/faces/face-me.png",
+      "faceHer": "/faces/face-her.png"
+    }
+  },
+  "timeline": [
+    {
+      "date": "14th March 2026",
+      "title": "Alagi",
+      "description": "One of my favourite views of you.",
+      "photo": "/photos/Alagi.jpg"
+    },
+    {
+      "date": "7th February 2026",
+      "title": "Bossy & Smol Kutty",
+      "description": "The perfect mix of bossy and adorable.",
+      "photo": "/photos/BossyKutty.jpg"
+    },
+    {
+      "date": "21st Feb 2026",
+      "title": "Elmina Kutty",
+      "description": "A little moment I want to keep forever.",
+      "photo": "/photos/Elmina_Kutty.jpg"
+    },
+    {
+      "date": "10th May 2026",
+      "title": "Funny Kutty",
+      "description": "You make even ordinary moments unforgettable.",
+      "photo": "/photos/FunnyKutty.jpg"
+    },
+    {
+      "date": "2nd April 2026",
+      "title": "Hiking Date",
+      "description": "Every adventure is better with you.",
+      "photo": "/photos/Hiking%20Date.jpg"
+    },
+    {
+      "date": "14 Feb 2026",
+      "title": "Innocent Kutty",
+      "description": "That sweet, innocent smile I love.",
+      "photo": "/photos/InnocentKutty.jpg"
+    },
+    {
+      "date": "14 Feb 2026",
+      "title": "Lovingg",
+      "description": "A reminder of how much love you bring into my life.",
+      "photo": "/photos/Lovingg.png"
+    },
+    {
+      "date": "9th April 2026",
+      "title": "Gitex Asia 2026",
+      "description": "Taking off into another memory together.",
+      "photo": "/photos/Plane.jpg"
+    },
+    {
+      "date": "22nd July 2026",
+      "title": "Queen",
+      "description": "My beautiful queen, always.",
+      "photo": "/photos/Queen.jpg"
+    },
+    {
+      "date": "April 2026",
+      "title": "Rowdy Baby",
+      "description": "My favourite kind of chaos.",
+      "photo": "/photos/RowdyBaby.jpg"
+    }
+  ],
+  "memories": [
+    {
+      "id": "memory-1",
+      "title": "Weddinggg",
+      "caption": "A beautiful moment worth keeping close.",
+      "photo": "/photos/Weddingg.jpg"
+    },
+    {
+      "id": "memory-2",
+      "title": "Hiking",
+      "caption": "Every adventure is better with you.",
+      "photo": "/photos/Hiking.jpg"
+    },
+    {
+      "id": "memory-3",
+      "title": "Pavamle",
+      "caption": "That sweet face I can never resist.",
+      "photo": "/photos/Pavamle.jpg"
+    },
+    {
+      "id": "memory-4",
+      "title": "Cutiema",
+      "caption": "A little snapshot of my favourite person.",
+      "photo": "/photos/Cutiema.jpg"
+    },
+    {
+      "id": "memory-5",
+      "title": "Sexyma",
+      "caption": "Absolutely impossible not to adore you.",
+      "photo": "/photos/Sexyma.jpg"
+    },
+    {
+      "id": "memory-6",
+      "title": "Alagida",
+      "caption": "You make every frame feel special.",
+      "photo": "/photos/Alagida.jpg"
+    },
+    {
+      "id": "memory-7",
+      "title": "Gymmm",
+      "caption": "Strong, lovely, and completely yourself.",
+      "photo": "/photos/Gymmm.jpg"
+    },
+    {
+      "id": "memory-8",
+      "title": "Alagi",
+      "caption": "One of my favourite views of you.",
+      "photo": "/photos/alagi%20copy.jpg"
+    },
+    {
+      "id": "memory-9",
+      "title": "Star Wars",
+      "caption": "A little bit of fun from our story.",
+      "photo": "/photos/Star%20Wars.jpg"
+    },
+    {
+      "id": "memory-10",
+      "title": "Temple Date",
+      "caption": "A peaceful memory I want to keep forever.",
+      "photo": "/photos/Temple%20Date.jpg"
+    }
+  ],
+  "reasons": [
+    "I love how you make even ordinary moments feel special.",
+    "I love your kind heart and the way you care for the people around you.",
+    "I love that I can be completely myself when I am with you."
+  ],
+  "letter": {
+    "salutation": "Dear Kuttyma,",
+    "paragraphs": [
+      "Some people make life louder. You make mine feel more like home. I love the way your smile can change the whole mood of an ordinary day, and the way even the smallest moments with you become memories I want to keep.",
+      "Thank you for being wonderfully, completely you. I hope this little world reminds you how loved you are, today and on every day that comes after it.",
+      "Happy birthday to my favourite person. I am so lucky that I get to keep choosing you, in all the little moments and all the big ones."
+    ],
+    "signature": "Always yours"
+  },
+  "gift": {
+    "type": "message",
+    "title": "A year of little adventures",
+    "description": "Your real present is a promise: more dates, more ridiculous photos, more food runs, more places to discover, and more ordinary days made special together.",
+    "image": null
+  }
+}

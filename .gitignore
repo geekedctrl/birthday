@@ -1,0 +1,14 @@
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+
+.env*
+!.env.example
+
+.preview/
+.preview-browser/
+.preview-*
+
+uploads/
+data/reactions.json

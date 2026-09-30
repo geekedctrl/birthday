@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="750" viewBox="0 0 600 750">
+  <rect width="600" height="750" fill="#eaded0"/>
+  <rect x="24" y="24" width="552" height="702" rx="260" fill="#f7efe2" stroke="#bba995"/>
+  <g fill="none" stroke="#a76565" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M300 490C270 415 337 365 302 292"/>
+    <path d="M296 443C250 427 225 392 229 371C270 377 292 403 296 443ZM303 401C343 392 369 362 372 338C333 345 311 369 303 401Z" fill="#d8dfcc" stroke="#7e917b"/>
+    <path d="M300 305C251 320 211 285 223 248C186 209 230 164 265 178C281 137 328 151 340 179C386 166 411 216 378 247C393 288 341 322 300 305Z" fill="#e6bfb4"/>
+    <path d="M300 290C262 281 238 255 252 220C262 196 287 190 308 204C332 185 362 211 355 237C350 264 326 288 300 290ZM302 267C274 255 270 233 288 222C305 211 326 224 332 240C324 255 313 262 302 267ZM288 222C281 245 306 253 320 235M223 248C236 273 262 286 300 290M340 179L308 204M265 178L252 220M378 247L340 272"/>
+  </g>
+  <text x="300" y="558" text-anchor="middle" fill="#5b6b5a" font-family="Georgia, serif" font-style="italic" font-size="32">A memory belongs here</text>
+  <text x="300" y="595" text-anchor="middle" fill="#8c786b" font-family="Arial, sans-serif" font-size="12" letter-spacing="3">OUR FAVOURITE MOMENT</text>
+</svg>
