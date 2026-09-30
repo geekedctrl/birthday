@@ -283,7 +283,7 @@ function ReactionScene() { const [emoji, setEmoji] = useState(""); const [text, 
 
 function SceneShell({ children, tone }: { children: React.ReactNode; tone: string }) {
   return <section className={`scene editorial-scene scene-${tone} grain`}>
-    <div className="editorial-masthead"><span className="masthead-mark">a little love letter</span><span className="masthead-caption">a birthday edition</span></div>
+    <div className="editorial-masthead"><span className="masthead-mark">a little love letter</span></div>
     <BotanicalDetails petals={tone !== "game"} />
     <SceneFit>{children}</SceneFit>
     <div className="editorial-colophon"><span>Collected moments & little things</span><span className="colophon-flower" aria-hidden="true">✳</span><span>Made with love, for you</span></div>
