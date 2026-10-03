@@ -13,7 +13,7 @@ Prefer `.webp` or `.avif` for smaller mobile downloads. Keep filenames simple: l
 
 ## Final birthday photo
 
-The final greeting uses `/photos/final-placeholder.svg` until you add your own photo.
+The final greeting uses `/photos/Lovingg.png`. You can change it to another photo at any time.
 Put your replacement in this folder, for example `public/photos/final-photo.jpg`.
 Then open `/admin/content`, set **Final photo** to `/photos/final-photo.jpg`, and save.
 Use the actual filename and extension; omit `public` from the image URL.

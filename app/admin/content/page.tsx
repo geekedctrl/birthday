@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import ImageField from "@/components/ImageCropField";
 
 type EditorState = {
   name: string;
@@ -90,24 +91,6 @@ function Field({
       {control}
       {hint && <small>{hint}</small>}
     </label>
-  );
-}
-
-function ImageField({ label, value, onChange, hint }: {
-  label: string;
-  value: string;
-  onChange: (value: string) => void;
-  hint?: string;
-}) {
-  return (
-    <div className="image-field">
-      <label>
-        <span>{label}</span>
-        <input value={value} onChange={(event) => onChange(event.target.value)} />
-        {hint && <small>{hint}</small>}
-      </label>
-      {value && <div className="editor-image-frame"><img src={value} alt="" /></div>}
-    </div>
   );
 }
 
@@ -406,7 +389,7 @@ export default function ContentAdminPage() {
             />
             <ImageField
               label="Final photo"
-              hint="Photos automatically crop from the center to fill their frame."
+              hint="Auto-fit is on. Use Crop photo to adjust the framing."
               value={form.finalPhoto}
               onChange={set("finalPhoto")}
             />
@@ -449,7 +432,8 @@ export default function ContentAdminPage() {
                   />
                   <ImageField
                     label="Photo"
-                    hint="Photos automatically crop from the center to fill their frame."
+                    hint="Auto-fit is on. Use Crop photo to adjust the framing."
+                    ratio={16 / 9}
                     value={entry.photo}
                     onChange={(value) => updateTimeline(index, "photo", value)}
                   />
@@ -498,7 +482,7 @@ export default function ContentAdminPage() {
                   />
                   <ImageField
                     label="Photo"
-                    hint="Photos automatically crop from the center to fill their frame."
+                    hint="Auto-fit is on. Use Crop photo to adjust the framing."
                     value={memory.photo}
                     onChange={(value) => updateMemory(index, "photo", value)}
                   />
@@ -550,7 +534,7 @@ export default function ContentAdminPage() {
             />
             <ImageField
               label="Gift image"
-              hint="Photos automatically crop from the center to fill their frame."
+              hint="Auto-fit is on. Use Crop photo to adjust the framing."
               value={form.giftImage}
               onChange={set("giftImage")}
             />

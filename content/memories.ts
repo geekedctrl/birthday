@@ -1,12 +1,12 @@
 export const memories = [
-  { id: "memory-1", title: "Weddingg", caption: "A beautiful moment worth keeping close.", photo: "/photos/Weddingg.jpg" },
-  { id: "memory-2", title: "Hiking", caption: "Every adventure is better with you.", photo: "/photos/Hiking.jpg" },
-  { id: "memory-3", title: "Pavamle", caption: "That sweet face I can never resist.", photo: "/photos/Pavamle.jpg" },
-  { id: "memory-4", title: "Cutiema", caption: "A little snapshot of my favourite person.", photo: "/photos/Cutiema.jpg" },
-  { id: "memory-5", title: "Sexyma", caption: "Absolutely impossible not to adore you.", photo: "/photos/Sexyma.jpg" },
-  { id: "memory-6", title: "Alagida", caption: "You make every frame feel special.", photo: "/photos/Alagida.jpg" },
-  { id: "memory-7", title: "Gymmm", caption: "Strong, lovely, and completely yourself.", photo: "/photos/Gymmm.jpg" },
-  { id: "memory-8", title: "Alagi", caption: "One of my favourite views of you.", photo: "/photos/alagi%20copy.jpg" },
-  { id: "memory-9", title: "Star Wars", caption: "A little bit of fun from our story.", photo: "/photos/Star%20Wars.jpg" },
-  { id: "memory-10", title: "Temple Date", caption: "A peaceful memory I want to keep forever.", photo: "/photos/Temple%20Date.jpg" }
+  { id: "memory-1", title: "Weddingg", caption: "All dressed up, and still my favourite kuttyma.", photo: "/photos/Weddingg.jpg" },
+  { id: "memory-2", title: "Hiking", caption: "My favourite part of any adventure? You.", photo: "/photos/Hiking.jpg" },
+  { id: "memory-3", title: "Pavamle", caption: "That face. How am I supposed to say no?", photo: "/photos/Pavamle.jpg" },
+  { id: "memory-4", title: "Cutiema", caption: "Cutiema, you make my heart go soft.", photo: "/photos/Cutiema.jpg" },
+  { id: "memory-5", title: "Sexyma", caption: "Yes, I am still staring at this one.", photo: "/photos/Sexyma.jpg" },
+  { id: "memory-6", title: "Alagida", caption: "Alagida. I could look at you all day.", photo: "/photos/Alagida.jpg" },
+  { id: "memory-7", title: "Gymmm", caption: "Strong kuttyma, soft spot in my heart.", photo: "/photos/Gymmm.jpg" },
+  { id: "memory-8", title: "Alagi", caption: "A photo for every time I miss your face.", photo: "/photos/alagi%20copy.jpg" },
+  { id: "memory-9", title: "Star Wars", caption: "In any galaxy, I would still choose you.", photo: "/photos/Star%20Wars.jpg" },
+  { id: "memory-10", title: "Temple Date", caption: "A little peace, a little prayer, and you.", photo: "/photos/Temple%20Date.jpg" }
 ];

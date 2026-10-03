@@ -10,7 +10,7 @@ export const birthdayConfig = {
   finalMessage: "I weave you da kuttyma",
   music: { intro: "", timeline: "", constellation: "", vinyl: "", finale: "" },
   media: {
-    finalPhoto: "/photos/final-placeholder.svg",
+    finalPhoto: "/photos/Lovingg.png",
     faceMe: "/faces/face-me.png",
     faceHer: "/faces/face-her.png"
   }

@@ -1,3 +1,6 @@
+let muted = false;
+export function setAudioMuted(value: boolean) { muted = value; }
+
 let context: AudioContext | null = null;
 
 export async function initialiseAudio() {
@@ -7,7 +10,7 @@ export async function initialiseAudio() {
 }
 
 export function playTone(frequency = 440, duration = 0.18) {
-  if (!context) return;
+  if (!context || muted) return;
   const oscillator = context.createOscillator();
   const gain = context.createGain();
   oscillator.frequency.value = frequency;

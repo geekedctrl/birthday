@@ -3,7 +3,7 @@ import path from "path";
 import { NextResponse } from "next/server";
 import { notifyReactionReceived } from "@/lib/notifications";
 
-type Reaction = { id: string; emoji?: string; text?: string; audioPath?: string; createdAt: string };
+type Reaction = { id: string; emoji?: string; text?: string; audioPath?: string; audioType?: string; createdAt: string };
 const filePath = path.join(process.cwd(), "data", "reactions.json");
 
 async function readReactions(): Promise<Reaction[]> {
@@ -41,7 +41,7 @@ export async function POST(request: Request) {
     audioPath = path.join("uploads", `${id}.webm`);
     await fs.writeFile(path.join(process.cwd(), audioPath), Buffer.from(await voice.arrayBuffer()));
   }
-  const reaction: Reaction = { id, emoji, text, audioPath, createdAt: new Date().toISOString() };
+  const reaction: Reaction = { id, emoji, text, audioPath, audioType: audioPath && voice instanceof File ? voice.type : undefined, createdAt: new Date().toISOString() };
   await fs.mkdir(path.dirname(filePath), { recursive: true });
   await fs.writeFile(filePath, JSON.stringify([reaction, ...reactions].slice(0, 500), null, 2), "utf8");
   await notifyReactionReceived({ hasAudio: Boolean(audioPath), text });

@@ -151,3 +151,9 @@ code { border-radius: 4px; background: rgba(11,46,31,.08); padding: .1rem .3rem;
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; transition-duration: .01ms !important; }
 }
+.photo-crop-editor { padding: .8rem; border: 1px solid #36534830; border-radius: 12px; }
+.photo-crop-editor label { display: block; margin-top: .8rem; }
+.photo-crop-editor input[type=range] { padding: 0; width: 100%; min-height: 36px; accent-color: #365348; }
+.photo-crop-editor select { padding: .6rem; width: 100%; }
+.crop-actions { display: flex; gap: .75rem; margin: 1rem 0; }
+.image-field > button { margin-top: .6rem; }

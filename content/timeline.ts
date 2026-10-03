@@ -1,12 +1,12 @@
 export const timeline = [
-  { date: "[DATE]", title: "Alagi", description: "One of my favourite views of you.", photo: "/photos/Alagi.jpg" },
-  { date: "[DATE]", title: "Bossy & Smol Kutty", description: "The perfect mix of bossy and adorable.", photo: "/photos/BossyKutty.jpg" },
-  { date: "[DATE]", title: "Elmina Kutty", description: "A little moment I want to keep forever.", photo: "/photos/Elmina_Kutty.jpg" },
-  { date: "[DATE]", title: "Funny Kutty", description: "You make even ordinary moments unforgettable.", photo: "/photos/FunnyKutty.jpg" },
-  { date: "[DATE]", title: "Hiking Date", description: "Every adventure is better with you.", photo: "/photos/Hiking%20Date.jpg" },
-  { date: "[DATE]", title: "Innocent Kutty", description: "That sweet, innocent smile I love.", photo: "/photos/InnocentKutty.jpg" },
-  { date: "[DATE]", title: "Lovingg", description: "A reminder of how much love you bring into my life.", photo: "/photos/Lovingg.png" },
-  { date: "[DATE]", title: "Plane Day", description: "Taking off into another memory together.", photo: "/photos/Plane.jpg" },
-  { date: "[DATE]", title: "Queen", description: "My beautiful queen, always.", photo: "/photos/Queen.jpg" },
-  { date: "[DATE]", title: "Rowdy Baby", description: "My favourite kind of chaos.", photo: "/photos/RowdyBaby.jpg" }
+  { date: "", title: "Alagi", description: "Alagi, you make it very hard to look away.", photo: "/photos/Alagi.jpg" },
+  { date: "", title: "Bossy & Smol Kutty", description: "So smol. So bossy. So very loved.", photo: "/photos/BossyKutty.jpg" },
+  { date: "", title: "Elmina Kutty", description: "Elmina looks lovely. You have my attention.", photo: "/photos/Elmina_Kutty.jpg" },
+  { date: "", title: "Funny Kutty", description: "My favourite reason to smile at my phone.", photo: "/photos/FunnyKutty.jpg" },
+  { date: "", title: "Hiking Date", description: "Any path feels sweeter with you beside me.", photo: "/photos/Hiking%20Date.jpg" },
+  { date: "", title: "Innocent Kutty", description: "That innocent face gets me every time.", photo: "/photos/InnocentKutty.jpg" },
+  { date: "", title: "Lovingg", description: "You and me. My favourite kind of photo.", photo: "/photos/Lovingg.png" },
+  { date: "", title: "Plane Day", description: "Another photo of you I am keeping close.", photo: "/photos/Plane.jpg" },
+  { date: "", title: "Queen", description: "My queen, even on the most ordinary day.", photo: "/photos/Queen.jpg" },
+  { date: "", title: "Rowdy Baby", description: "A little rowdy, a lot of love.", photo: "/photos/RowdyBaby.jpg" }
 ];
